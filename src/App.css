@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+  /* Light Theme Colors */
+  --primary-bg-light: #e0f7fa;
+  --primary-text-light: #004d40;
+  --secondary-text-light: #00796b;
+  --accent-light: #0cb6a5;
+  --button-bg-light: #0288d1;
+  --button-text-light: #ffffff;
+  --bg-color-light: #ffffff;
+  --lt-color-light: #b2ebf2;
+
+  /* Dark Theme Colors */
+  --primary-bg-dark: #263238;
+  --primary-text-dark: #e0f7fa;
+  --secondary-text-dark: #80deea;
+  --accent-dark: #00897b;
+  --button-bg-dark: #00796b;
+  --button-text-dark: #ffffff;
+  --bg-color-dark: #37474f;
+  --lt-color-dark: #263238;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  max-width: 3840px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section {
+  max-width: 3840px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Light Theme */
+body.light {
+  background-color: var(--primary-bg-light);
+  color: var(--primary-text-light);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dark Theme */
+body.dark {
+  background-color: var(--primary-bg-dark);
+  color: var(--primary-text-dark);
 }
