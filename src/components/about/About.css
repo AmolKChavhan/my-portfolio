@@ -1,0 +1,80 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--primary-bg-light);
+  color: var(--primary-text-light);
+}
+
+body.dark .about {
+  background-color: var(--primary-bg-dark);
+  color: var(--primary-text-dark);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 150px;
+  padding: 200px 100px;
+  z-index: 1;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.download-button {
+  background-color: var(--button-bg, #5169e3);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: var(--button-hover-bg, #233ec3);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50px;
+  object-fit: cover;
+  border: 4px solid var(--image-border-color, #fff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
