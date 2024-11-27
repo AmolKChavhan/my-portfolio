@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./App.css";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
+import About from "./sections/about/About";
+import Experience from "./sections/experience/Experience";
+import Skills from "./sections/skills/Skills";
+import Projects from "./sections/projects/Projects";
+import Contact from "./sections/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const theme = useSelector((state) => state.theme);
@@ -20,8 +21,9 @@ const App = () => {
     <div className="App">
       <Navbar />
       <About />
-      <Projects />
+      <Experience />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </div>
