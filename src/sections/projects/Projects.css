@@ -1,8 +1,9 @@
 .projects {
-  background-color: var(--bg-color-light);
+  background-color: var(--primary-bg-light);
   color: var(--primary-text-light);
   padding: 50px 0;
   transition: background-color 0.3s, color 0.3s;
+  border-bottom: 1px solid var(--accent-dark);
 }
 
 body.dark .projects,
