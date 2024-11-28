@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav
       className={`navbar ${theme === "dark" ? "navbar-dark" : "navbar-light"}`}
     >
-      <div className="navbar-brand">My Portfolio</div>
+      <div className="navbar-brand">AKC</div>
       <ul className="navbar-links">
         {navbarOptions.map((link, index) => (
           <li key={index}>

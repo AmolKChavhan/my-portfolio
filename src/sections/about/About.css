@@ -5,8 +5,12 @@
   align-items: center;
   overflow: hidden;
   background-color: var(--primary-bg-light);
-  color: var(--primary-text-light);
+  color: var(--bg-color-light);
   border-bottom: 1px solid var(--accent-dark);
+  background-image: url("../../assets/images/bg-about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body.dark .about {
@@ -31,6 +35,10 @@ body.dark .about {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.about-text h2 {
+  color: var(--bg-color-light);
 }
 
 .about-text p {
@@ -58,6 +66,11 @@ body.dark .about {
   background-color: var(--button-hover-bg, #233ec3);
 }
 
+.download-button:focus {
+  outline: 2px dashed var(--accent-dark);
+  outline-offset: 4px;
+}
+
 .about-image {
   flex: 1;
   display: flex;
@@ -76,6 +89,8 @@ body.dark .about {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-image img:hover {
+.about-image img:hover,
+.about-image img:focus {
   transform: scale(1.05);
+  box-shadow: 0 6px 15px whitesmoke;
 }
