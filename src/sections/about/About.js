@@ -5,7 +5,7 @@ const About = () => {
   const { description, image, alt, cvFile } = aboutContent;
 
   const getFileExtension = (fileName) => {
-    return fileName.split('.').pop().toLowerCase();
+    return fileName.split(".").pop().toLowerCase();
   };
 
   const fileExtension = getFileExtension(cvFile);
@@ -17,17 +17,18 @@ const About = () => {
           {description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <a 
-            href={cvFile} 
-            download={`CV-Amol-Chavhan.${fileExtension}`} 
+          <a
+            href={cvFile}
+            download={`CV-Amol-Chavhan.${fileExtension}`}
             className="download-button"
+            aria-label="Download CV Amol Chavhan"
           >
             Download CV
           </a>
         </div>
 
         <div className="about-image">
-          <img src={image} alt={alt} />
+          <img src={image} alt={alt} loading="lazy" />
         </div>
       </div>
     </section>
